@@ -25,7 +25,7 @@ public class GreetingController {
 		//int k = 22 / i;
 		HelloGoodbye goodBye = service.createGreeting(type, id);
 		return goodBye;
-	}
+	} 
 
 	@ExceptionHandler(NameNotFoundException.class)
 	public ResponseEntity<?> nameNotFoundException(NameNotFoundException ex, WebRequest request) {
